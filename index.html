@@ -1,2 +1,65 @@
-<h1>hello world</h1>
-<p>This is a simple HTML page.</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Secondary Header Navigation -->
+    <nav class="secondary-nav" aria-label="Secondary">
+      <ul>
+        <li><a href="#">The Kitchen Guide</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Gift Guides</a></li>
+        <li><a href="#">Register a Product</a></li>
+      </ul>
+    </nav>
+    <!-- Primary Header Navigation -->
+    <nav class="primary-nav" aria-label="Primary">
+      <ul class="site-links">
+        <li><a href="#"><img src="logo.png" alt="Logo"></a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+      <form action="/search" method="get" role="search">
+          <input type="search" id="site-search" name="q" placeholder="Search" aria-label="Search website">
+        </form>
+        <ul class="user-actions">
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+    </nav>
+    <div class="fx-ticker">50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • 50% Off Sale • </div>
+    <button data-modal-target="#modal">Open Modal</button>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="title">Example Modal</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+        reprehenderit delectus fuga temporibus repudiandae ratione cupiditate
+        perspiciatis repellat excepturi libero velit natus accusamus officia
+        dicta ipsa nemo distinctio recusandae molestiae sunt fugiat, dolores
+        maiores voluptatibus? Odio doloremque consequatur quisquam suscipit,
+        delectus recusandae! Cupiditate consequuntur necessitatibus excepturi
+        dolorum ipsam eligendi nihil recusandae eum a repellendus aperiam odit
+        nostrum vel asperiores nulla possimus nisi, mollitia hic dolore soluta.
+        Blanditiis accusantium nulla temporibus minus, cupiditate, corrupti
+        accusamus ipsa veritatis delectus beatae sapiente quod?
+      </div>
+    </div>
+    <div id="overlay"></div>
+  </body>
+</html>
