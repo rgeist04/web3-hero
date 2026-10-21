@@ -9,6 +9,13 @@ body {
     padding: 0;
 }
 
+.marquee-container {
+  height: 48px;
+  background-color: #ffc000;
+  align-items: center;
+  display: flex;
+}
+
 .modal {
   position: fixed;
   top: 50%;
