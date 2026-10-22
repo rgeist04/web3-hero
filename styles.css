@@ -9,8 +9,24 @@ body {
     padding: 0;
 }
 
+h1 {
+  font-family: "Corben", serif;
+  font-optical-sizing: auto;
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  line-height: 1.2;
+  text-shadow: 0px 0px 50px black;
+}
+
 #hero {
   background-image: url('../images/hero-image.svg');
+}
+
+#hero-content {
+  padding: 100px 70px;
+  height: 750px;
 }
 
 .marquee-container {
@@ -80,6 +96,7 @@ nav.primary-nav ul.site-links {
   justify-content: space-between;
   list-style-type: none;
   gap: 69px;
+  padding: 0;
 }
 
 nav.primary-nav ul.site-links li a {
