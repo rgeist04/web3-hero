@@ -9,6 +9,10 @@ body {
     padding: 0;
 }
 
+#hero {
+  background-image: url('../images/hero-image.svg');
+}
+
 .marquee-container {
   height: 48px;
   background-color: #ffc000;
@@ -62,25 +66,78 @@ body {
 
 nav.primary-nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 
 nav.primary-nav ul.site-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  list-style-type: none;
+  gap: 69px;
+}
+
+nav.primary-nav ul.site-links li a {
+  text-decoration: none;
+  color: #1C3D26;
+  font-family: "Corben", serif;
+  font-optical-sizing: auto;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav.primary-nav ul.user-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 30px;
+}
+
+nav.primary-nav ul.user-actions li a img {
+  width: 24px;
+  height: 24px;
+}
+
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav form input[type="search"] {
+  padding: 10px;
+  border: 1.25px solid #e1e6e2;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 312px;
+  background-image: url('../images/search.svg');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+nav form input[type="search"] img {
+  height: 16px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
 }
 
 nav.secondary-nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-    background-color: #1C3D26;
+  background-color: #1C3D26;
   height: 50px;
   width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 nav.secondary-nav li a {
@@ -98,6 +155,7 @@ nav.secondary-nav ul {
   justify-content: flex-end;
   gap: 71px;
   list-style-type: none;
+  margin-right: 70px;
 }
 
 #overlay {
@@ -117,6 +175,10 @@ nav.secondary-nav ul {
   pointer-events: all;
 }
 
+#page {
+  overflow: hidden;
+}
+
 /* Colour tokens — override to re-skin the effect:
    --ink    main text colour (defaults to currentColor)
    --ink-2  primary accent   --ink-3  secondary accent */
@@ -133,7 +195,6 @@ nav.secondary-nav ul {
   white-space: nowrap;
   animation: fx-ticker 9s linear infinite;
   color:#1C3D26;
-  overflow: hidden;
 }
 @keyframes fx-ticker {
   to { transform: translateX(-20%); }
