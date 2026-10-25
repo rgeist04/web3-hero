@@ -16,17 +16,40 @@ h1 {
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
-  line-height: 1.2;
+  line-height: 4rem;
   text-shadow: 0px 0px 50px black;
+  margin-bottom: 30px;
 }
 
 #hero {
   background-image: url('../images/hero-image.svg');
 }
 
+#hero-button {
+  background-color: #ffc000;
+  color: #1C3D26;
+  font-family: "Corben", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px 23px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
 #hero-content {
   padding: 100px 70px;
   height: 750px;
+}
+
+html {
+  font-size: 100%; 
+}
+
+#logo {
+  margin-left: 4.375rem;
 }
 
 .marquee-container {
@@ -42,29 +65,104 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 17px;
   z-index: 10;
   background-color: white;
-  width: 500px;
+  width: 620px;
   max-width: 80%;
+  height: 371px;
+  overflow: hidden;
 }
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-header {
-  padding: 10px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
+.modal.active .stockpot {
+  animation: slideInA 1s ease-out forwards;
+  animation-delay: 0s;
 }
 
-.modal-header .title {
+.modal.active .saucepan {
+  animation: slideInB 1s ease-out forwards;
+  animation-delay: 0.25s;
+}
+
+.modal.active .skillet {
+  animation: slideInC 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.modal-button {
+  background-color: #1C3D26;
+  color: #ffffff;
+  font-family: "Corben", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 6px 23px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.modal-header {
+  padding: 10px 15px 0px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.stockpot {
+  position: absolute;
+  width: 215px;
+  height: 131px;
+  right: 189px;
+}
+
+.saucepan {
+  position: absolute;
+  width: 204px;
+  height: 134px;
+  left: 365px;
+}
+
+.skillet {
+  position: absolute;
+  width: 232px;
+  height: 132px;
+  right: 344px;
+}
+
+@keyframes slideInA {
+  from { transform: translateX(-150%); }
+  to { transform: translateX(0);}
+}
+
+@keyframes slideInB {
+  from { transform: translateX(150%); }
+  to { transform: translateX(0);}
+}
+
+@keyframes slideInC {
+  from { transform: translateX(-150%); }
+  to { transform: translateX(0);}
+}
+
+
+.title {
   font-size: 1.25rem;
   font-weight: bold;
+  color: #1C3D26;
+  font-family: "Corben", serif;
+  font-optical-sizing: auto;
+  font-size: 2.2rem;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-header .close-button {
@@ -72,12 +170,54 @@ h1 {
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: regular;
 }
 
 .modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px 15px;
+}
+
+.modal-body .pots {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-body button {
+  margin-top: 120px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+}
+
+nav form {
+  display: flex;
+  align-items: center;
+}
+
+nav form input[type="search"] {
+  padding: 10px;
+  border: 1.25px solid #e1e6e2;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 322px;
+  background-image: url('../images/search.svg');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  font-family: "Corben", serif;
+  font-optical-sizing: auto;
+  line-height: 1.2;
+}
+
+nav form input[type="search"] img {
+  height: 16px;
 }
 
 nav.primary-nav {
@@ -86,8 +226,6 @@ nav.primary-nav {
   background-color: #ffffff;
   height: 100px;
   width: 100%;
-  padding-left: 70px;
-  padding-right: 70px;
 }
 
 nav.primary-nav ul.site-links {
@@ -97,6 +235,8 @@ nav.primary-nav ul.site-links {
   list-style-type: none;
   gap: 69px;
   padding: 0;
+  margin-left: 8.25rem;
+  margin-right: 115px;
 }
 
 nav.primary-nav ul.site-links li a {
@@ -115,37 +255,12 @@ nav.primary-nav ul.user-actions {
   justify-content: space-between;
   list-style-type: none;
   gap: 30px;
+  padding-left: 30px;
 }
 
 nav.primary-nav ul.user-actions li a img {
-  width: 24px;
-  height: 24px;
-}
-
-nav form {
-  display: flex;
-  align-items: center;
-}
-
-nav form input[type="search"] {
-  padding: 10px;
-  border: 1.25px solid #e1e6e2;
-  border-radius: 10px;
-  font-size: 1rem;
-  width: 312px;
-  background-image: url('../images/search.svg');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding-left: 40px;
-}
-
-nav form input[type="search"] img {
-  height: 16px;
-}
-
-nav a {
-  display: flex;
-  align-items: center;
+  width: 26px;
+  height: 26px;
 }
 
 nav.secondary-nav {
