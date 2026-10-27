@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modal</title>
-    <link href="reset.css" rel="stylesheet" >
-    <link href="styles.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <script defer src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,56 +15,57 @@
 
   <body>
     <section id="page">
-    <!-- Secondary Header Navigation -->
-    <nav class="secondary-nav" aria-label="Secondary">
-      <ul>
-        <li><a href="#">The Kitchen Guide</a></li>
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">Gift Guides</a></li>
-        <li><a href="#">Register a Product</a></li>
-      </ul>
-    </nav>
-    <!-- Primary Header Navigation -->
-    <nav class="primary-nav" aria-label="Primary">
-      <a id="logo" href="#"><img src="../images/logo.svg" alt="Logo"></a>
-      <ul class="site-links">
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Accessories</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Sale</a></li>
-      </ul>
-      <form action="/search" method="get" role="search">
-        <input type="search" id="site-search" name="q" placeholder="Search" aria-label="Search website">
-      </form>
-        <ul class="user-actions">
-          <li><a href="#"><img src="../images/account.png" alt="Account"></a></li>
-          <li><a href="#"><img src="../images/cart.png" alt="Cart"></a></li>
+      <!-- Secondary Header Navigation -->
+      <nav class="secondary-nav" aria-label="Secondary">
+        <ul>
+          <li><a href="#">The Kitchen Guide</a></li>
+          <li><a href="#">Recipes</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Gift Guides</a></li>
+          <li><a href="#">Register a Product</a></li>
         </ul>
-    </nav>
-    <header>
-        <div class="fx-ticker marquee-container">50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;</div>
-    </header>  
-    <section id="hero">
-      <section id="hero-content">
-      <h1>Soup Season Is<br>Finally Here</h1>
-      <button id="hero-button">Shop Slowcookers Now</button>
-      <div class="modal" id="modal">
-        <div class="modal-header">
-          <button data-close-button class="close-button"><img src="../images/close-icon.png" alt="close" class="close-icon"></button>
-        </div>
-        <div class="title">Shop Cookware Sets 50% Off</div>
-        <div class="modal-body">
-          <div class="pots">
-            <img src="../images/skillet.png" alt="skillet" class="skillet">
-            <img src="../images/saucepan.png" alt="sauce pan" class="saucepan">
-            <img src="../images/stockpot.png" alt="stock pot" class="stockpot">
+      </nav>
+      <!-- Primary Header Navigation -->
+      <nav class="primary-nav" aria-label="Primary">
+        <a id="logo" href="#"><img src="../images/logo.svg" alt="Logo"></a>
+        <ul class="site-links">
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Sale</a></li>
+        </ul>
+        <form action="/search" method="get" role="search">
+          <input type="search" id="site-search" name="q" placeholder="Search" aria-label="Search website">
+        </form>
+          <ul class="user-actions">
+            <li><a href="#"><img src="../images/account.png" alt="Account"></a></li>
+            <li><a href="#"><img src="../images/cart.png" alt="Cart"></a></li>
+          </ul>
+      </nav>
+      <header>
+          <div class="fx-ticker marquee-container">50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;50% Off Sale&emsp;•&emsp;</div>
+      </header>  
+      <section id="hero">
+        <section id="hero-content">
+        <h1>Soup Season Is<br>Finally Here</h1>
+        <button id="hero-button">Shop Slowcookers Now</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <button data-close-button class="close-button"><img src="../images/close-icon.png" alt="close" class="close-icon"></button>
           </div>
-          <button class="modal-button">Shop Sale Now</button>
+          <div class="title">Shop Cookware Sets 50% Off</div>
+          <div class="modal-body">
+            <div class="pots">
+              <img src="../images/skillet.png" alt="skillet" class="skillet">
+              <img src="../images/saucepan.png" alt="sauce pan" class="saucepan">
+              <img src="../images/stockpot.png" alt="stock pot" class="stockpot">
+            </div>
+            <button class="modal-button">Shop Sale Now</button>
+          </div>
         </div>
-      </div>
-      <div id="overlay"></div>
+        <div id="overlay"></div>
+        </section>
+      </section>
     </section>
-  </section>
   </body>
 </html>
