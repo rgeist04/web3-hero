@@ -5,8 +5,17 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  font-family: "Corben", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  font-family: "Corben", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .close-icon {
@@ -15,15 +24,19 @@ body {
 }
 
 h1 {
-  font-family: "Corben", serif;
-  font-optical-sizing: auto;
   font-size: 4rem;
-  font-weight: 400;
-  font-style: normal;
   color: #ffffff;
   line-height: 4rem;
   text-shadow: 0px 0px 50px black;
   margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #1C3D26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero {
@@ -33,10 +46,6 @@ h1 {
 #hero-button {
   background-color: #ffc000;
   color: #1C3D26;
-  font-family: "Corben", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   padding: 10px 23px;
   border-radius: 10px;
   border: none;
@@ -106,10 +115,6 @@ html {
 .modal-button {
   background-color: #1C3D26;
   color: #ffffff;
-  font-family: "Corben", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   padding: 6px 23px;
   border-radius: 8px;
   border: none;
@@ -166,28 +171,13 @@ html {
   to { transform: translateX(0);}
 }
 
-
-.title {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #1C3D26;
-  font-family: "Corben", serif;
-  font-optical-sizing: auto;
-  font-size: 2.2rem;
-  font-weight: 400;
-  font-style: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .modal-header .close-button {
   cursor: pointer;
   border: none;
   outline: none;
   background: none;
   font-size: 2rem;
-  font-weight: 400;
+  font-family: serif;
 }
 
 .modal-body {
@@ -223,17 +213,13 @@ nav form input[type="search"] {
   border-radius: 10px;
   font-size: 1rem;
   width: 322px;
-  background-image: url('../images/search.svg');
+  background-image: url('images/search.svg');
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding-left: 40px;
   font-family: "Corben", serif;
   font-optical-sizing: auto;
   line-height: 1.2;
-}
-
-nav form input[type="search"] img {
-  height: 16px;
 }
 
 nav.primary-nav {
@@ -258,11 +244,7 @@ nav.primary-nav ul.site-links {
 nav.primary-nav ul.site-links li a {
   text-decoration: none;
   color: #1C3D26;
-  font-family: "Corben", serif;
-  font-optical-sizing: auto;
   font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
 }
 
 nav.primary-nav ul.user-actions {
@@ -291,11 +273,7 @@ nav.secondary-nav {
 nav.secondary-nav li a {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Corben", serif;
-  font-optical-sizing: auto;
   font-size: 1rem;
-  font-weight: 400;
-  font-style: normal;
 }
 
 nav.secondary-nav ul {
@@ -327,11 +305,6 @@ nav.secondary-nav ul {
   overflow: hidden;
 }
 
-/* Colour tokens — override to re-skin the effect:
-   --ink    main text colour (defaults to currentColor)
-   --ink-2  primary accent   --ink-3  secondary accent */
-:root { --ink: currentColor; --ink-2: #FF4FD8; --ink-3: #4FF8FF; }
-
 /* 83 Tickertape — endless editorial marquee gliding one seamless loop
    (the word repeats five times; the track slides exactly one copy width) */
 .fx-ticker {
@@ -339,7 +312,6 @@ nav.secondary-nav ul {
   width: max-content;
   font: 400 18px "Corben", serif;
   letter-spacing: .08em;
-  color: var(--ink);
   white-space: nowrap;
   animation: fx-ticker 9s linear infinite;
   color:#1C3D26;
