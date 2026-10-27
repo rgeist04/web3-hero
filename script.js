@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     const modal = document.querySelector("#modal");
     openModal(modal);
-  }, 500);
+  }, 3000);
 });
 
 overlay.addEventListener("click", () => {
