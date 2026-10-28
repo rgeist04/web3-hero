@@ -68,10 +68,6 @@ html {
   font-size: 100%; 
 }
 
-#logo {
-  margin-left: 4.375rem;
-}
-
 .marquee-container {
   height: 48px;
   background-color: #ffc000;
@@ -228,6 +224,7 @@ nav.primary-nav {
   background-color: #ffffff;
   height: 100px;
   width: 100%;
+  margin: 0 70px;
 }
 
 nav.primary-nav ul.site-links {
@@ -250,7 +247,7 @@ nav.primary-nav ul.site-links li a {
 nav.primary-nav ul.user-actions {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   list-style-type: none;
   gap: 30px;
   padding-left: 30px;
